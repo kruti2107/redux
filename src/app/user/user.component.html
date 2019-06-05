@@ -1,0 +1,17 @@
+<app-home></app-home>
+<mat-toolbar>
+  <span>ADD USER</span>
+</mat-toolbar>
+<mat-card class="my-card">
+  <mat-card-content>
+    <form class="my-form" [formGroup]="userForm" (ngSubmit)="onAdd()" >
+      <mat-form-field class="full-width">
+        <mat-label>UserName</mat-label>
+        <input  matInput  placeholder="UserName" formControlName="userName">
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button  color="primary">ADD</button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>
